@@ -48,7 +48,7 @@
 		/* STEP 4a: Move linkParagraph to another location in the DOM */
 		section.appendChild(linkParagraph);
 		/* STEP 4b: Remove the node */
-
+		section.removeChild(linkParagraph);
 		/* STEP 4c: Strangely, a node cannot remove itself, it has to have its parent remove its child - comment out the above and have linkParagraph remove itself - sort of… */
 
 
