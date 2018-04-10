@@ -18,9 +18,9 @@
 	<!-- STEP 1: Analyze this page in the elements inspector pane in your browser developer tools (try a variety of different browsers) - inspect an element node, root node, child node, descendant node, parent node, sibling nodes, and text nodes -->
 	<script>
 		/* STEP 2a: Select an element inside the DOM and store a reference to in inside a variable */
-
+		var link = document.querySelector('a');
 		/* STEP 2b: Update the text node inside the link by changing the Node.textContent property */
-
+		link.textContent = "MDN Homepage";
 		/* STEP 2c: Change the URL by updating the href attribute node */
 
 		// The above DOM manipulation was possible due to document.querySelector() - other methods available include document.getElementById(), document.getElementsByClassName(), document.getElementsByTagName() and others…
