@@ -36,11 +36,12 @@
 
 		/* STEP 3c: Add this new node to the end of the nodes contained by the SECTION element */
 		section.appendChild(paragraph);
-		
+
 		/* STEP 3d: Refresh the page in the browser and look at the updated element inspector */
 		/* STEP 3e: Create a text node, and insert it into the paragraph that contains the link */
-
-
+		var text = document.createTextNode(' - the best source for web development information on the web.');
+		var linkParagraph = document.querySelector('section p');
+		linkParagraph.appendChild(text);
 
 		/* STEP 4: Moving and Removing DOM Elements
 		Sometimes it is necessary to move nodes of the DOM around or delete them entirely */
